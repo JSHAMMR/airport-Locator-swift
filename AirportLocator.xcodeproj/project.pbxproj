@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64B79366C8EF1251BFCAB190 /* Pods_AirportLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */; };
+		DC978F6A238C0537006CAB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F69238C0537006CAB68 /* AppDelegate.swift */; };
+		DC978F6C238C0537006CAB68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F6B238C0537006CAB68 /* SceneDelegate.swift */; };
+		DC978F6E238C0537006CAB68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F6D238C0537006CAB68 /* ViewController.swift */; };
+		DC978F71238C0537006CAB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC978F6F238C0537006CAB68 /* Main.storyboard */; };
+		DC978F73238C0539006CAB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC978F72238C0539006CAB68 /* Assets.xcassets */; };
+		DC978F76238C0539006CAB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC978F74238C0539006CAB68 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27F902D5DDC032ADEF37A9AA /* Pods-AirportLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocator.release.xcconfig"; path = "Target Support Files/Pods-AirportLocator/Pods-AirportLocator.release.xcconfig"; sourceTree = "<group>"; };
+		A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC978F66238C0537006CAB68 /* Airport Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airport Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC978F69238C0537006CAB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC978F6B238C0537006CAB68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC978F6D238C0537006CAB68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC978F70238C0537006CAB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC978F72238C0539006CAB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC978F75238C0539006CAB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC978F77238C0539006CAB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBB39EA0EEC2F32E1D6503F /* Pods-AirportLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocator.debug.xcconfig"; path = "Target Support Files/Pods-AirportLocator/Pods-AirportLocator.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC978F63238C0537006CAB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B79366C8EF1251BFCAB190 /* Pods_AirportLocator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50D3314CC50B7C9D746979B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEBB39EA0EEC2F32E1D6503F /* Pods-AirportLocator.debug.xcconfig */,
+				27F902D5DDC032ADEF37A9AA /* Pods-AirportLocator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5E670CD1CFC09A3A05AFA57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC978F5D238C0537006CAB68 = {
+			isa = PBXGroup;
+			children = (
+				DC978F68238C0537006CAB68 /* AirportLocator */,
+				DC978F67238C0537006CAB68 /* Products */,
+				A50D3314CC50B7C9D746979B /* Pods */,
+				C5E670CD1CFC09A3A05AFA57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC978F67238C0537006CAB68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC978F66238C0537006CAB68 /* Airport Locator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC978F68238C0537006CAB68 /* AirportLocator */ = {
+			isa = PBXGroup;
+			children = (
+				DC978F69238C0537006CAB68 /* AppDelegate.swift */,
+				DC978F6B238C0537006CAB68 /* SceneDelegate.swift */,
+				DC978F6D238C0537006CAB68 /* ViewController.swift */,
+				DC978F6F238C0537006CAB68 /* Main.storyboard */,
+				DC978F72238C0539006CAB68 /* Assets.xcassets */,
+				DC978F74238C0539006CAB68 /* LaunchScreen.storyboard */,
+				DC978F77238C0539006CAB68 /* Info.plist */,
+			);
+			path = AirportLocator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC978F65238C0537006CAB68 /* AirportLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC978F7A238C0539006CAB68 /* Build configuration list for PBXNativeTarget "AirportLocator" */;
+			buildPhases = (
+				755B278D3131A160737C333A /* [CP] Check Pods Manifest.lock */,
+				DC978F62238C0537006CAB68 /* Sources */,
+				DC978F63238C0537006CAB68 /* Frameworks */,
+				DC978F64238C0537006CAB68 /* Resources */,
+				624288B45A902361D7492312 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirportLocator;
+			productName = AirportLocator;
+			productReference = DC978F66238C0537006CAB68 /* Airport Locator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC978F5E238C0537006CAB68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Jamil;
+				TargetAttributes = {
+					DC978F65238C0537006CAB68 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = DC978F61238C0537006CAB68 /* Build configuration list for PBXProject "AirportLocator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC978F5D238C0537006CAB68;
+			productRefGroup = DC978F67238C0537006CAB68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC978F65238C0537006CAB68 /* AirportLocator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC978F64238C0537006CAB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC978F76238C0539006CAB68 /* LaunchScreen.storyboard in Resources */,
+				DC978F73238C0539006CAB68 /* Assets.xcassets in Resources */,
+				DC978F71238C0537006CAB68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		624288B45A902361D7492312 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirportLocator/Pods-AirportLocator-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirportLocator/Pods-AirportLocator-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirportLocator/Pods-AirportLocator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755B278D3131A160737C333A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirportLocator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC978F62238C0537006CAB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC978F6E238C0537006CAB68 /* ViewController.swift in Sources */,
+				DC978F6A238C0537006CAB68 /* AppDelegate.swift in Sources */,
+				DC978F6C238C0537006CAB68 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC978F6F238C0537006CAB68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC978F70238C0537006CAB68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC978F74238C0539006CAB68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC978F75238C0539006CAB68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC978F78238C0539006CAB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC978F79238C0539006CAB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC978F7B238C0539006CAB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEBB39EA0EEC2F32E1D6503F /* Pods-AirportLocator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirportLocator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jamil.AirportLocator;
+				PRODUCT_NAME = "Airport Locator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC978F7C238C0539006CAB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F902D5DDC032ADEF37A9AA /* Pods-AirportLocator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirportLocator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jamil.AirportLocator;
+				PRODUCT_NAME = "Airport Locator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC978F61238C0537006CAB68 /* Build configuration list for PBXProject "AirportLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC978F78238C0539006CAB68 /* Debug */,
+				DC978F79238C0539006CAB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC978F7A238C0539006CAB68 /* Build configuration list for PBXNativeTarget "AirportLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC978F7B238C0539006CAB68 /* Debug */,
+				DC978F7C238C0539006CAB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC978F5E238C0537006CAB68 /* Project object */;
+}
