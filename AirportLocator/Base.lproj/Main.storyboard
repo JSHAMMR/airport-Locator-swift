@@ -33,18 +33,11 @@
                                 <rect key="frame" x="184" y="400" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="getCurrentPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7pO-CL-cqp"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="addressLabel" destination="NVv-xD-nhC" id="1dW-yg-DWE"/>
-                        <outlet property="nameLabel" destination="ar3-eA-6BF" id="F73-9K-JNp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
