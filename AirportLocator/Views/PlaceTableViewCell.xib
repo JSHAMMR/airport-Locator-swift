@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaceTableViewCell" rowHeight="100" id="pm7-Vk-vWU" customClass="PlaceTableViewCell" customModule="Airport_Locator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pm7-Vk-vWU" id="xxL-1f-AQB">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KLIA" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRT-BN-BiL" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ddh-0i-GZJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lat 23232323" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfu-oc-DwZ" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="48" width="102.5" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="GS9-4B-3bK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="long 121313123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFI-v1-oce" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="75" width="123.5" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="sLn-eW-LMN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KLIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZN-Qs-7T4" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
+                        <rect key="frame" x="267" y="48" width="116" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="116" id="jDf-SR-qxT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gfu-oc-DwZ" firstAttribute="leading" secondItem="xxL-1f-AQB" secondAttribute="leading" id="452-k0-l1t"/>
+                    <constraint firstAttribute="bottom" secondItem="LFI-v1-oce" secondAttribute="bottom" id="6Qe-c4-bar"/>
+                    <constraint firstItem="TRT-BN-BiL" firstAttribute="top" secondItem="xxL-1f-AQB" secondAttribute="top" id="6hu-Br-yum"/>
+                    <constraint firstAttribute="bottom" secondItem="qZN-Qs-7T4" secondAttribute="bottom" id="BmH-Uf-zKf"/>
+                    <constraint firstItem="qZN-Qs-7T4" firstAttribute="top" secondItem="xxL-1f-AQB" secondAttribute="top" constant="48" id="CB3-65-WAa"/>
+                    <constraint firstAttribute="trailing" secondItem="qZN-Qs-7T4" secondAttribute="trailing" id="EPZ-LG-6cJ"/>
+                    <constraint firstItem="LFI-v1-oce" firstAttribute="leading" secondItem="xxL-1f-AQB" secondAttribute="leading" id="ZDG-CV-Zyq"/>
+                    <constraint firstItem="LFI-v1-oce" firstAttribute="top" secondItem="gfu-oc-DwZ" secondAttribute="bottom" constant="2" id="lhe-o5-Vg9"/>
+                    <constraint firstAttribute="trailing" secondItem="TRT-BN-BiL" secondAttribute="trailing" constant="10" id="tVY-xT-uZp"/>
+                    <constraint firstItem="gfu-oc-DwZ" firstAttribute="top" secondItem="TRT-BN-BiL" secondAttribute="bottom" constant="-2" id="ud0-U4-xqL"/>
+                    <constraint firstItem="TRT-BN-BiL" firstAttribute="leading" secondItem="xxL-1f-AQB" secondAttribute="leading" id="v2f-Af-aur"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="latLbl" destination="gfu-oc-DwZ" id="2gm-XT-TH8"/>
+                <outlet property="longLbl" destination="LFI-v1-oce" id="JzE-jw-qNy"/>
+                <outlet property="nameLbl" destination="TRT-BN-BiL" id="Ij4-aZ-CHY"/>
+                <outlet property="rateLbl" destination="qZN-Qs-7T4" id="xJG-R8-rd3"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="257.8125"/>
+        </tableViewCell>
+    </objects>
+</document>

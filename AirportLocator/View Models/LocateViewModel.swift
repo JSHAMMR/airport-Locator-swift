@@ -12,8 +12,6 @@ import GooglePlaces
 
 
 
-let KEY = "AIzaSyD9jtCRDexMo9VShzsiVzwYliA-XlgLOD4"
-let KEYWORD = "airport"
 
 protocol FetchPlacesDelegate {
     func didFetchPlaces(locateModel:LocateModel)

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlacesView" customModule="Airport_Locator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airports List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxR-10-YjL" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="133" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bNB-8N-pEZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frz-b5-6Hi">
+                    <rect key="frame" x="353" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="AuE-4h-TFM"/>
+                        <constraint firstAttribute="height" constant="50" id="YRw-7q-axE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Close"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JFB-xy-YGt">
+                    <rect key="frame" x="0.0" y="50" width="414" height="846"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-RP-icq">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JFB-xy-YGt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="ALZ-Vt-M8J"/>
+                <constraint firstItem="Hvk-RP-icq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CIp-84-ljh"/>
+                <constraint firstAttribute="trailing" secondItem="JFB-xy-YGt" secondAttribute="trailing" id="HO4-Q1-XPP"/>
+                <constraint firstItem="Hvk-RP-icq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RMb-8m-T9d"/>
+                <constraint firstItem="JFB-xy-YGt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YKQ-dn-1tu"/>
+                <constraint firstItem="Frz-b5-6Hi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="boI-j5-ofF"/>
+                <constraint firstItem="xxR-10-YjL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fNF-L8-wXM"/>
+                <constraint firstItem="xxR-10-YjL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mhn-Os-K8q"/>
+                <constraint firstAttribute="bottom" secondItem="JFB-xy-YGt" secondAttribute="bottom" id="q5e-kh-P9A"/>
+                <constraint firstAttribute="trailing" secondItem="Frz-b5-6Hi" secondAttribute="trailing" constant="11" id="ql9-MZ-GWu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="activityIndicatorView" destination="Hvk-RP-icq" id="cjK-v1-3Hv"/>
+                <outlet property="closeButton" destination="Frz-b5-6Hi" id="sdr-Ne-H66"/>
+                <outlet property="placesTableView" destination="JFB-xy-YGt" id="2SS-he-juv"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </view>
+    </objects>
+</document>
