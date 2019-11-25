@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		64B79366C8EF1251BFCAB190 /* Pods_AirportLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */; };
 		DC978F6A238C0537006CAB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F69238C0537006CAB68 /* AppDelegate.swift */; };
-		DC978F6C238C0537006CAB68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F6B238C0537006CAB68 /* SceneDelegate.swift */; };
 		DC978F6E238C0537006CAB68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F6D238C0537006CAB68 /* ViewController.swift */; };
 		DC978F71238C0537006CAB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC978F6F238C0537006CAB68 /* Main.storyboard */; };
 		DC978F73238C0539006CAB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC978F72238C0539006CAB68 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 		A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC978F66238C0537006CAB68 /* Airport Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airport Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC978F69238C0537006CAB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC978F6B238C0537006CAB68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC978F6D238C0537006CAB68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC978F70238C0537006CAB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC978F72238C0539006CAB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 				FEBB39EA0EEC2F32E1D6503F /* Pods-AirportLocator.debug.xcconfig */,
 				27F902D5DDC032ADEF37A9AA /* Pods-AirportLocator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				DC978F69238C0537006CAB68 /* AppDelegate.swift */,
-				DC978F6B238C0537006CAB68 /* SceneDelegate.swift */,
 				DC978F6D238C0537006CAB68 /* ViewController.swift */,
 				DC978F6F238C0537006CAB68 /* Main.storyboard */,
 				DC978F72238C0539006CAB68 /* Assets.xcassets */,
@@ -209,7 +205,6 @@
 			files = (
 				DC978F6E238C0537006CAB68 /* ViewController.swift in Sources */,
 				DC978F6A238C0537006CAB68 /* AppDelegate.swift in Sources */,
-				DC978F6C238C0537006CAB68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AirportLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AirportLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
