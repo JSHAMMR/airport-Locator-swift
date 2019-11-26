@@ -40,12 +40,14 @@
                     <connections>
                         <outlet property="locationManagerProvider" destination="R9K-rU-AtT" id="ekj-3f-PYV"/>
                         <outlet property="map" destination="BSJ-6c-IqH" id="ux9-zK-5cY"/>
+                        <outlet property="mapProvider" destination="OrJ-Y6-dI0" id="y5R-yh-sh5"/>
                         <outlet property="placesProvider" destination="H3B-T4-RSk" id="t9r-q4-e8m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="H3B-T4-RSk" customClass="PlacesProvider" customModule="Airport_Locator" customModuleProvider="target"/>
                 <customObject id="R9K-rU-AtT" customClass="LocationManagerProvider" customModule="Airport_Locator" customModuleProvider="target"/>
+                <customObject id="OrJ-Y6-dI0" customClass="MapProvider" customModule="Airport_Locator" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="128.57142857142856"/>
         </scene>

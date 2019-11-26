@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+
 class ViewController: UIViewController {
 
     @IBOutlet var placesProvider: PlacesProvider!
@@ -16,22 +17,19 @@ class ViewController: UIViewController {
     fileprivate let locateViewModel = LocateViewModel()
     @IBOutlet weak var map: MKMapView!
     fileprivate let locationManager = CLLocationManager()
-
+    @IBOutlet var mapProvider: MapProvider!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         // load views
         self.placesView = (PlacesView.instanceFromNib() as! PlacesView)
         self.placesView.frame = CGRect(x: 20, y: 200, width: UIScreen.main.bounds.width-40, height: UIScreen.main.bounds.height-400)
-        
         
         // register cell
         self.placesView.placesTableView.register(UINib(nibName: CellID.placesTableViewCell, bundle: nil), forCellReuseIdentifier: CellID.placesTableViewCell)
         
         // define locationManagerProvider
         locationManagerProvider = LocationManagerProvider(map:self.map)
-            
         
         // define locationManager features
         locationManager.delegate = locationManagerProvider
@@ -40,10 +38,10 @@ class ViewController: UIViewController {
         locationManager.distanceFilter = 1
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
+        // map
+        self.mapProvider = MapProvider()
         
-        
-
-        
+        self.map.delegate = self.mapProvider
     }
     
     @IBAction func locate(_ sender: Any) {
@@ -54,11 +52,9 @@ class ViewController: UIViewController {
         // start loading
         self.placesView.activityIndicatorView.startAnimating()
         
-        
         // cell view model to fetch places and set liseneer
         locateViewModel.fetchPlaces()
         locateViewModel.fetchPlacesDelegate = self
-        
         
         // show tableview with animation
         UIView.transition(with: self.view, duration: 0.5, options: [.transitionCrossDissolve], animations: {
@@ -68,7 +64,7 @@ class ViewController: UIViewController {
         }, completion: nil)
     }
     
-    @objc fileprivate func close(){
+    @objc func close(){
         // remove tableview with animation
 
        UIView.transition(with: self.view, duration: 0.5, options: [.transitionCrossDissolve], animations: {
@@ -79,13 +75,12 @@ class ViewController: UIViewController {
     
 }
 
-
 extension ViewController:FetchPlacesDelegate {
     func didFetchPlaces(locateModel: LocateModel) {
         // once fetching is done this delegation func will be called
         
         // feed the provider with reposnse model from google places API
-        self.placesProvider = PlacesProvider(locateModel: locateModel,map: self.map)
+        self.placesProvider = PlacesProvider(locateModel: locateModel,map: self.map , parentView: self.placesView)
         
         // using main thread for UI update
         DispatchQueue.main.async {
@@ -106,9 +101,7 @@ extension ViewController:FetchPlacesDelegate {
             print(name)
             
         })
-        
     }
-    
-  
 }
+
 

@@ -40,7 +40,7 @@ class LocationManagerProvider: NSObject,CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("Location Manager failed with the following error: \(locations)")
         
-        
+        userLocation = locations.last
 
     }
 }

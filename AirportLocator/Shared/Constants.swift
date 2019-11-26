@@ -10,6 +10,8 @@ let KEY = "AIzaSyD9jtCRDexMo9VShzsiVzwYliA-XlgLOD4"
 let KEYWORD = "airport"
 enum ViewID {
     static let placesView = "PlacesView"
+    static let placesAnnotationView = "PlacesAnnotationView"
+
     
 }
 
