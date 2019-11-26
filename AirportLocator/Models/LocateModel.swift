@@ -6,6 +6,9 @@
 //  Copyright © 2019 Jamil. All rights reserved.
 //
 
+// this class model has been created online by using response JSON from google API,
+// this model should match the same structure of response JSON
+// JSONDecoder() has been used to decode response data to model
 
 import Foundation
 

@@ -25,20 +25,27 @@
                     </view>
                     <navigationItem key="navigationItem" id="GGQ-BZ-t4m">
                         <rightBarButtonItems>
-                            <barButtonItem title="show" id="Wjl-Tn-JVC">
+                            <barButtonItem image="icloud.fill" catalog="system" id="Wjl-Tn-JVC">
                                 <connections>
                                     <action selector="showPlaces:" destination="BYZ-38-t0r" id="9OB-uz-Ysk"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="locate" id="epp-JA-BL3"/>
+                            <barButtonItem image="location.circle.fill" catalog="system" id="epp-JA-BL3">
+                                <connections>
+                                    <action selector="locate:" destination="BYZ-38-t0r" id="ZeP-JP-Zzm"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="locationManagerProvider" destination="R9K-rU-AtT" id="ekj-3f-PYV"/>
+                        <outlet property="map" destination="BSJ-6c-IqH" id="ux9-zK-5cY"/>
                         <outlet property="placesProvider" destination="H3B-T4-RSk" id="t9r-q4-e8m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="H3B-T4-RSk" customClass="PlacesProvider" customModule="Airport_Locator" customModuleProvider="target"/>
+                <customObject id="R9K-rU-AtT" customClass="LocationManagerProvider" customModule="Airport_Locator" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="128.57142857142856"/>
         </scene>
@@ -61,4 +68,8 @@
             <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icloud.fill" catalog="system" width="64" height="44"/>
+        <image name="location.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

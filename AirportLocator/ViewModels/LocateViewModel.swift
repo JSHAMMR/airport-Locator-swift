@@ -14,24 +14,27 @@ import GooglePlaces
 
 
 protocol FetchPlacesDelegate {
+    // create delegation func to be used on controller
     func didFetchPlaces(locateModel:LocateModel)
    }
 
 class LocateViewModel {
+    // create delegation instance
     var fetchPlacesDelegate:FetchPlacesDelegate?
-    fileprivate let locationManager = CLLocationManager()
+    // create google places instance
     fileprivate var placesClient: GMSPlacesClient!
     
     
     init() {
-        locationManager.requestAlwaysAuthorization()
-        
+        // provide a key from google console api
         GMSPlacesClient.provideAPIKey(KEY)
         
         placesClient = GMSPlacesClient.shared()
 
     }
 
+    
+    // function to excute a query of nearby airports
     func fetchPlaces () {
         var strGoogleApi = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(KEYWORD)&key=\(KEY)"
                   strGoogleApi = strGoogleApi.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
@@ -44,8 +47,11 @@ class LocateViewModel {
                 
                 
                 do {
+                    
+                    // decode response data to LocateModel
                     let locateModel  = try! LocateModel(data: data!)
 
+                    // call delegated func
                     self.fetchPlacesDelegate?.didFetchPlaces(locateModel: locateModel)
 
                 } catch let error {

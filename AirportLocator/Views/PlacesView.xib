@@ -27,14 +27,15 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frz-b5-6Hi">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frz-b5-6Hi">
                     <rect key="frame" x="353" y="0.0" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="AuE-4h-TFM"/>
                         <constraint firstAttribute="height" constant="50" id="YRw-7q-axE"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                    <state key="normal" title="Close"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" image="eject.fill" catalog="system"/>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JFB-xy-YGt">
                     <rect key="frame" x="0.0" y="50" width="414" height="846"/>
@@ -44,7 +45,7 @@
                     <rect key="frame" x="197" y="438" width="20" height="20"/>
                 </activityIndicatorView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.78414847317351599" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="JFB-xy-YGt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="ALZ-Vt-M8J"/>
                 <constraint firstItem="Hvk-RP-icq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CIp-84-ljh"/>
@@ -69,6 +70,23 @@
                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                     <real key="value" value="1"/>
                 </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="1" height="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="shouldRasterize" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="rasterizationScale">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="activityIndicatorView" destination="Hvk-RP-icq" id="cjK-v1-3Hv"/>
@@ -78,4 +96,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
         </view>
     </objects>
+    <resources>
+        <image name="eject.fill" catalog="system" width="64" height="56"/>
+    </resources>
 </document>

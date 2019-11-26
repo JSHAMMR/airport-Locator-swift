@@ -7,39 +7,60 @@
 //
 
 import UIKit
-
+import MapKit
 class ViewController: UIViewController {
-   
-    fileprivate let locateViewModel = LocateViewModel()
 
     @IBOutlet var placesProvider: PlacesProvider!
-    
+    @IBOutlet var locationManagerProvider: LocationManagerProvider!
     fileprivate var placesView:PlacesView!
-
-    
+    fileprivate let locateViewModel = LocateViewModel()
+    @IBOutlet weak var map: MKMapView!
+    fileprivate let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
+        // load views
         self.placesView = (PlacesView.instanceFromNib() as! PlacesView)
         self.placesView.frame = CGRect(x: 20, y: 200, width: UIScreen.main.bounds.width-40, height: UIScreen.main.bounds.height-400)
         
         
+        // register cell
         self.placesView.placesTableView.register(UINib(nibName: CellID.placesTableViewCell, bundle: nil), forCellReuseIdentifier: CellID.placesTableViewCell)
-
-           
         
-       
+        // define locationManagerProvider
+        locationManagerProvider = LocationManagerProvider(map:self.map)
+            
+        
+        // define locationManager features
+        locationManager.delegate = locationManagerProvider
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+        locationManager.distanceFilter = 1
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        
+        
+
+        
+    }
+    
+    @IBAction func locate(_ sender: Any) {
+        map.zoom()
         
     }
     @IBAction func showPlaces(_ sender: Any) {
+        // start loading
         self.placesView.activityIndicatorView.startAnimating()
+        
+        
+        // cell view model to fetch places and set liseneer
         locateViewModel.fetchPlaces()
         locateViewModel.fetchPlacesDelegate = self
-               
-               
-
         
+        
+        // show tableview with animation
         UIView.transition(with: self.view, duration: 0.5, options: [.transitionCrossDissolve], animations: {
             self.view.addSubview(self.placesView)
             self.placesView.closeButton.addTarget(self, action: #selector(self.close), for: .touchUpInside)
@@ -48,6 +69,8 @@ class ViewController: UIViewController {
     }
     
     @objc fileprivate func close(){
+        // remove tableview with animation
+
        UIView.transition(with: self.view, duration: 0.5, options: [.transitionCrossDissolve], animations: {
          self.placesView.removeFromSuperview()
        }, completion: nil)
@@ -59,12 +82,19 @@ class ViewController: UIViewController {
 
 extension ViewController:FetchPlacesDelegate {
     func didFetchPlaces(locateModel: LocateModel) {
+        // once fetching is done this delegation func will be called
         
+        // feed the provider with reposnse model from google places API
+        self.placesProvider = PlacesProvider(locateModel: locateModel,map: self.map)
         
-        self.placesProvider = PlacesProvider(locateModel: locateModel)
+        // using main thread for UI update
         DispatchQueue.main.async {
+            
+            // start loading animation
             self.placesView.activityIndicatorView.stopAnimating()
+            // reload tableview data
             self.placesView.placesTableView.reloadData()
+            // set the protocols to provider 
             self.placesView.placesTableView.delegate = self.placesProvider
             self.placesView.placesTableView.dataSource = self.placesProvider
           
@@ -81,3 +111,4 @@ extension ViewController:FetchPlacesDelegate {
     
   
 }
+
