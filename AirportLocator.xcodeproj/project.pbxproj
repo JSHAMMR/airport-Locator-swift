@@ -7,17 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551BD4CFDCDA4229F6BA3DD8 /* Pods_AirportLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199EFDDA709C16A2616C22EA /* Pods_AirportLocatorTests.framework */; };
 		64B79366C8EF1251BFCAB190 /* Pods_AirportLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */; };
+		DC18336F238D498D00E63B00 /* MapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18336E238D498D00E63B00 /* MapProvider.swift */; };
+		DC18337D238D6A0700E63B00 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18337C238D6A0700E63B00 /* LocationManagerTests.swift */; };
+		DC183386238D6EBC00E63B00 /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC183384238D6B2900E63B00 /* mockData.json */; };
+		DC183387238D745500E63B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F6D238C0537006CAB68 /* ViewController.swift */; };
+		DC183388238D746C00E63B00 /* PlacesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B8E06238C395900F1F9D0 /* PlacesProvider.swift */; };
+		DC183389238D747D00E63B00 /* LocationManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6871AC238C50C7000F1882 /* LocationManagerProvider.swift */; };
+		DC18338A238D748100E63B00 /* MapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18336E238D498D00E63B00 /* MapProvider.swift */; };
+		DC18338B238D748F00E63B00 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F87238C33D4006CAB68 /* Utils.swift */; };
+		DC18338C238D749200E63B00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F89238C3669006CAB68 /* Constants.swift */; };
+		DC18338D238D749400E63B00 /* LocateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F7F238C20ED006CAB68 /* LocateViewModel.swift */; };
+		DC183392238D74AB00E63B00 /* LocateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F81238C2698006CAB68 /* LocateModel.swift */; };
+		DC1BA328238F3E9A00D62E07 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1BA327238F3E9A00D62E07 /* item.json */; };
+		DC1BA32A238F441100D62E07 /* MapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA329238F441100D62E07 /* MapTest.swift */; };
+		DC1BA32B238F450700D62E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC978F6F238C0537006CAB68 /* Main.storyboard */; };
+		DC1BA32C238F4B9500D62E07 /* PlacesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC978F85238C3394006CAB68 /* PlacesView.xib */; };
+		DC1BA32D238F4B9800D62E07 /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F83238C337A006CAB68 /* PlacesView.swift */; };
+		DC3B8E07238C395900F1F9D0 /* PlacesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B8E06238C395900F1F9D0 /* PlacesProvider.swift */; };
+		DC3B8E09238C398B00F1F9D0 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B8E08238C398B00F1F9D0 /* PlaceTableViewCell.swift */; };
+		DC3B8E0B238C3A4600F1F9D0 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3B8E0A238C3A4600F1F9D0 /* PlaceTableViewCell.xib */; };
+		DC4FAE86238E9AB800E88B08 /* PlacesDelegateDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4FAE85238E9AB800E88B08 /* PlacesDelegateDataSourceTest.swift */; };
+		DC4FAE88238EBF7A00E88B08 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B8E08238C398B00F1F9D0 /* PlaceTableViewCell.swift */; };
+		DC4FAE89238EBF7D00E88B08 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3B8E0A238C3A4600F1F9D0 /* PlaceTableViewCell.xib */; };
+		DC4FAE8D238ED2D400E88B08 /* ModelMapingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4FAE8C238ED2D400E88B08 /* ModelMapingTest.swift */; };
+		DC6871AD238C50C7000F1882 /* LocationManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6871AC238C50C7000F1882 /* LocationManagerProvider.swift */; };
 		DC978F6A238C0537006CAB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F69238C0537006CAB68 /* AppDelegate.swift */; };
 		DC978F6E238C0537006CAB68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F6D238C0537006CAB68 /* ViewController.swift */; };
 		DC978F71238C0537006CAB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC978F6F238C0537006CAB68 /* Main.storyboard */; };
 		DC978F73238C0539006CAB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC978F72238C0539006CAB68 /* Assets.xcassets */; };
 		DC978F76238C0539006CAB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC978F74238C0539006CAB68 /* LaunchScreen.storyboard */; };
+		DC978F80238C20ED006CAB68 /* LocateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F7F238C20ED006CAB68 /* LocateViewModel.swift */; };
+		DC978F82238C2698006CAB68 /* LocateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F81238C2698006CAB68 /* LocateModel.swift */; };
+		DC978F84238C337A006CAB68 /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F83238C337A006CAB68 /* PlacesView.swift */; };
+		DC978F86238C3394006CAB68 /* PlacesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC978F85238C3394006CAB68 /* PlacesView.xib */; };
+		DC978F88238C33D4006CAB68 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F87238C33D4006CAB68 /* Utils.swift */; };
+		DC978F8A238C3669006CAB68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC978F89238C3669006CAB68 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC18337F238D6A0700E63B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC978F5E238C0537006CAB68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC978F65238C0537006CAB68;
+			remoteInfo = AirportLocator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		199EFDDA709C16A2616C22EA /* Pods_AirportLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportLocatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F902D5DDC032ADEF37A9AA /* Pods-AirportLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocator.release.xcconfig"; path = "Target Support Files/Pods-AirportLocator/Pods-AirportLocator.release.xcconfig"; sourceTree = "<group>"; };
+		7ED29312E812A655C118FB05 /* Pods-AirportLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocatorTests.debug.xcconfig"; path = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80FBD3DA0BE3D3BD4E23BDEF /* Pods-AirportLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocatorTests.release.xcconfig"; path = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC18336E238D498D00E63B00 /* MapProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProvider.swift; sourceTree = "<group>"; };
+		DC18337A238D6A0700E63B00 /* AirportLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirportLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC18337C238D6A0700E63B00 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		DC18337E238D6A0700E63B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC183384238D6B2900E63B00 /* mockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
+		DC1BA327238F3E9A00D62E07 /* item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = item.json; sourceTree = "<group>"; };
+		DC1BA329238F441100D62E07 /* MapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTest.swift; sourceTree = "<group>"; };
+		DC3B8E06238C395900F1F9D0 /* PlacesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesProvider.swift; sourceTree = "<group>"; };
+		DC3B8E08238C398B00F1F9D0 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		DC3B8E0A238C3A4600F1F9D0 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		DC4FAE85238E9AB800E88B08 /* PlacesDelegateDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDelegateDataSourceTest.swift; sourceTree = "<group>"; };
+		DC4FAE8C238ED2D400E88B08 /* ModelMapingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMapingTest.swift; sourceTree = "<group>"; };
+		DC6871AC238C50C7000F1882 /* LocationManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerProvider.swift; sourceTree = "<group>"; };
 		DC978F66238C0537006CAB68 /* Airport Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airport Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC978F69238C0537006CAB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC978F6D238C0537006CAB68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,10 +82,24 @@
 		DC978F72238C0539006CAB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC978F75238C0539006CAB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC978F77238C0539006CAB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC978F7F238C20ED006CAB68 /* LocateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateViewModel.swift; sourceTree = "<group>"; };
+		DC978F81238C2698006CAB68 /* LocateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateModel.swift; sourceTree = "<group>"; };
+		DC978F83238C337A006CAB68 /* PlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
+		DC978F85238C3394006CAB68 /* PlacesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesView.xib; sourceTree = "<group>"; };
+		DC978F87238C33D4006CAB68 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DC978F89238C3669006CAB68 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FEBB39EA0EEC2F32E1D6503F /* Pods-AirportLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocator.debug.xcconfig"; path = "Target Support Files/Pods-AirportLocator/Pods-AirportLocator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC183377238D6A0700E63B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551BD4CFDCDA4229F6BA3DD8 /* Pods_AirportLocatorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC978F63238C0537006CAB68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,6 +116,8 @@
 			children = (
 				FEBB39EA0EEC2F32E1D6503F /* Pods-AirportLocator.debug.xcconfig */,
 				27F902D5DDC032ADEF37A9AA /* Pods-AirportLocator.release.xcconfig */,
+				7ED29312E812A655C118FB05 /* Pods-AirportLocatorTests.debug.xcconfig */,
+				80FBD3DA0BE3D3BD4E23BDEF /* Pods-AirportLocatorTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -53,14 +126,83 @@
 			isa = PBXGroup;
 			children = (
 				A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */,
+				199EFDDA709C16A2616C22EA /* Pods_AirportLocatorTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC18337B238D6A0700E63B00 /* AirportLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC18337C238D6A0700E63B00 /* LocationManagerTests.swift */,
+				DC4FAE85238E9AB800E88B08 /* PlacesDelegateDataSourceTest.swift */,
+				DC4FAE8C238ED2D400E88B08 /* ModelMapingTest.swift */,
+				DC1BA329238F441100D62E07 /* MapTest.swift */,
+				DC18337E238D6A0700E63B00 /* Info.plist */,
+				DC1BA327238F3E9A00D62E07 /* item.json */,
+			);
+			path = AirportLocatorTests;
+			sourceTree = "<group>";
+		};
+		DC6871A5238C4BC1000F1882 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC978F6D238C0537006CAB68 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC6871A6238C4BD6000F1882 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC978F81238C2698006CAB68 /* LocateModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC6871A7238C4BE8000F1882 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				DC3B8E06238C395900F1F9D0 /* PlacesProvider.swift */,
+				DC6871AC238C50C7000F1882 /* LocationManagerProvider.swift */,
+				DC18336E238D498D00E63B00 /* MapProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		DC6871A8238C4C17000F1882 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC978F83238C337A006CAB68 /* PlacesView.swift */,
+				DC978F85238C3394006CAB68 /* PlacesView.xib */,
+				DC3B8E08238C398B00F1F9D0 /* PlaceTableViewCell.swift */,
+				DC3B8E0A238C3A4600F1F9D0 /* PlaceTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC6871AA238C4C57000F1882 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DC978F7F238C20ED006CAB68 /* LocateViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DC6871AB238C4C7F000F1882 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DC978F87238C33D4006CAB68 /* Utils.swift */,
+				DC978F89238C3669006CAB68 /* Constants.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		DC978F5D238C0537006CAB68 = {
 			isa = PBXGroup;
 			children = (
 				DC978F68238C0537006CAB68 /* AirportLocator */,
+				DC18337B238D6A0700E63B00 /* AirportLocatorTests */,
 				DC978F67238C0537006CAB68 /* Products */,
 				A50D3314CC50B7C9D746979B /* Pods */,
 				C5E670CD1CFC09A3A05AFA57 /* Frameworks */,
@@ -71,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				DC978F66238C0537006CAB68 /* Airport Locator.app */,
+				DC18337A238D6A0700E63B00 /* AirportLocatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,8 +221,14 @@
 		DC978F68238C0537006CAB68 /* AirportLocator */ = {
 			isa = PBXGroup;
 			children = (
+				DC183384238D6B2900E63B00 /* mockData.json */,
+				DC6871AB238C4C7F000F1882 /* Shared */,
+				DC6871AA238C4C57000F1882 /* ViewModels */,
+				DC6871A8238C4C17000F1882 /* Views */,
+				DC6871A7238C4BE8000F1882 /* Providers */,
+				DC6871A6238C4BD6000F1882 /* Models */,
+				DC6871A5238C4BC1000F1882 /* Controller */,
 				DC978F69238C0537006CAB68 /* AppDelegate.swift */,
-				DC978F6D238C0537006CAB68 /* ViewController.swift */,
 				DC978F6F238C0537006CAB68 /* Main.storyboard */,
 				DC978F72238C0539006CAB68 /* Assets.xcassets */,
 				DC978F74238C0539006CAB68 /* LaunchScreen.storyboard */,
@@ -91,6 +240,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC183379238D6A0700E63B00 /* AirportLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC183381238D6A0700E63B00 /* Build configuration list for PBXNativeTarget "AirportLocatorTests" */;
+			buildPhases = (
+				6C6B914BF2489E38E2482F39 /* [CP] Check Pods Manifest.lock */,
+				DC183376238D6A0700E63B00 /* Sources */,
+				DC183377238D6A0700E63B00 /* Frameworks */,
+				DC183378238D6A0700E63B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC183380238D6A0700E63B00 /* PBXTargetDependency */,
+			);
+			name = AirportLocatorTests;
+			productName = AirportLocatorTests;
+			productReference = DC18337A238D6A0700E63B00 /* AirportLocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DC978F65238C0537006CAB68 /* AirportLocator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC978F7A238C0539006CAB68 /* Build configuration list for PBXNativeTarget "AirportLocator" */;
@@ -120,6 +288,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Jamil;
 				TargetAttributes = {
+					DC183379238D6A0700E63B00 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = DC978F65238C0537006CAB68;
+					};
 					DC978F65238C0537006CAB68 = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -139,17 +311,32 @@
 			projectRoot = "";
 			targets = (
 				DC978F65238C0537006CAB68 /* AirportLocator */,
+				DC183379238D6A0700E63B00 /* AirportLocatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC183378238D6A0700E63B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4FAE89238EBF7D00E88B08 /* PlaceTableViewCell.xib in Resources */,
+				DC1BA328238F3E9A00D62E07 /* item.json in Resources */,
+				DC1BA32C238F4B9500D62E07 /* PlacesView.xib in Resources */,
+				DC1BA32B238F450700D62E07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC978F64238C0537006CAB68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DC978F76238C0539006CAB68 /* LaunchScreen.storyboard in Resources */,
 				DC978F73238C0539006CAB68 /* Assets.xcassets in Resources */,
+				DC978F86238C3394006CAB68 /* PlacesView.xib in Resources */,
+				DC183386238D6EBC00E63B00 /* mockData.json in Resources */,
+				DC3B8E0B238C3A4600F1F9D0 /* PlaceTableViewCell.xib in Resources */,
 				DC978F71238C0537006CAB68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +359,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirportLocator/Pods-AirportLocator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C6B914BF2489E38E2482F39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirportLocatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		755B278D3131A160737C333A /* [CP] Check Pods Manifest.lock */ = {
@@ -199,16 +408,54 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC183376238D6A0700E63B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC18338A238D748100E63B00 /* MapProvider.swift in Sources */,
+				DC183392238D74AB00E63B00 /* LocateModel.swift in Sources */,
+				DC183387238D745500E63B00 /* ViewController.swift in Sources */,
+				DC18337D238D6A0700E63B00 /* LocationManagerTests.swift in Sources */,
+				DC1BA32A238F441100D62E07 /* MapTest.swift in Sources */,
+				DC183388238D746C00E63B00 /* PlacesProvider.swift in Sources */,
+				DC4FAE8D238ED2D400E88B08 /* ModelMapingTest.swift in Sources */,
+				DC18338D238D749400E63B00 /* LocateViewModel.swift in Sources */,
+				DC4FAE86238E9AB800E88B08 /* PlacesDelegateDataSourceTest.swift in Sources */,
+				DC18338C238D749200E63B00 /* Constants.swift in Sources */,
+				DC1BA32D238F4B9800D62E07 /* PlacesView.swift in Sources */,
+				DC183389238D747D00E63B00 /* LocationManagerProvider.swift in Sources */,
+				DC18338B238D748F00E63B00 /* Utils.swift in Sources */,
+				DC4FAE88238EBF7A00E88B08 /* PlaceTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC978F62238C0537006CAB68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC978F80238C20ED006CAB68 /* LocateViewModel.swift in Sources */,
+				DC6871AD238C50C7000F1882 /* LocationManagerProvider.swift in Sources */,
+				DC978F84238C337A006CAB68 /* PlacesView.swift in Sources */,
+				DC3B8E09238C398B00F1F9D0 /* PlaceTableViewCell.swift in Sources */,
+				DC3B8E07238C395900F1F9D0 /* PlacesProvider.swift in Sources */,
+				DC978F82238C2698006CAB68 /* LocateModel.swift in Sources */,
 				DC978F6E238C0537006CAB68 /* ViewController.swift in Sources */,
+				DC978F8A238C3669006CAB68 /* Constants.swift in Sources */,
+				DC18336F238D498D00E63B00 /* MapProvider.swift in Sources */,
 				DC978F6A238C0537006CAB68 /* AppDelegate.swift in Sources */,
+				DC978F88238C33D4006CAB68 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC183380238D6A0700E63B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC978F65238C0537006CAB68 /* AirportLocator */;
+			targetProxy = DC18337F238D6A0700E63B00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC978F6F238C0537006CAB68 /* Main.storyboard */ = {
@@ -230,6 +477,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC183382238D6A0700E63B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED29312E812A655C118FB05 /* Pods-AirportLocatorTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirportLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jamil.AirportLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airport Locator.app/Airport Locator";
+			};
+			name = Debug;
+		};
+		DC183383238D6A0700E63B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FBD3DA0BE3D3BD4E23BDEF /* Pods-AirportLocatorTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirportLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jamil.AirportLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airport Locator.app/Airport Locator";
+			};
+			name = Release;
+		};
 		DC978F78238C0539006CAB68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -385,6 +672,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC183381238D6A0700E63B00 /* Build configuration list for PBXNativeTarget "AirportLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC183382238D6A0700E63B00 /* Debug */,
+				DC183383238D6A0700E63B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC978F61238C0537006CAB68 /* Build configuration list for PBXProject "AirportLocator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

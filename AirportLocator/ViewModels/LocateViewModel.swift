@@ -32,6 +32,28 @@ class LocateViewModel {
         placesClient = GMSPlacesClient.shared()
 
     }
+    
+     func loadMockData () -> LocateModel{
+        var locateModel:LocateModel!
+
+           if let path = Bundle.main.path(forResource: "mockData", ofType: "json") {
+               
+               do {
+                       let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                       locateModel = try JSONDecoder().decode(LocateModel.self, from: data)
+                
+                print(locateModel)
+           
+                 } catch let error{
+                    print("error\(error)")
+                      // handle error
+                 }
+           }
+        
+        return locateModel
+                           
+       }
+    
 
     
     // function to excute a query of nearby airports

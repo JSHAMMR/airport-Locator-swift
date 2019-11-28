@@ -7,5 +7,11 @@ target 'AirportLocator' do
 
   # Pods for AirportLocator
   pod 'GooglePlaces'
+  
+  
+  target 'AirportLocatorTests' do
+    inherit! :search_paths
+    # Pods for testing
 
+  end
 end

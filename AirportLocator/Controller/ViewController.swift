@@ -13,21 +13,16 @@ class ViewController: UIViewController {
 
     @IBOutlet var placesProvider: PlacesProvider!
     @IBOutlet var locationManagerProvider: LocationManagerProvider!
-    fileprivate var placesView:PlacesView!
+    var placesView:PlacesView!
     fileprivate let locateViewModel = LocateViewModel()
     @IBOutlet weak var map: MKMapView!
-    fileprivate let locationManager = CLLocationManager()
+    let locationManager = CLLocationManager()
     @IBOutlet var mapProvider: MapProvider!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // load views
-        self.placesView = (PlacesView.instanceFromNib() as! PlacesView)
-        self.placesView.frame = CGRect(x: 20, y: 200, width: UIScreen.main.bounds.width-40, height: UIScreen.main.bounds.height-400)
         
-        // register cell
-        self.placesView.placesTableView.register(UINib(nibName: CellID.placesTableViewCell, bundle: nil), forCellReuseIdentifier: CellID.placesTableViewCell)
-        
+      
         // define locationManagerProvider
         locationManagerProvider = LocationManagerProvider(map:self.map)
         
@@ -42,6 +37,8 @@ class ViewController: UIViewController {
         self.mapProvider = MapProvider()
         
         self.map.delegate = self.mapProvider
+        
+        
     }
     
     @IBAction func locate(_ sender: Any) {
@@ -49,6 +46,17 @@ class ViewController: UIViewController {
         
     }
     @IBAction func showPlaces(_ sender: Any) {
+        if self.placesView == nil {
+                  // load views
+
+              self.placesView = (PlacesView.instanceFromNib() as! PlacesView)
+              self.placesView.frame = CGRect(x: 20, y: 200, width: UIScreen.main.bounds.width-40, height: UIScreen.main.bounds.height-400)
+                  
+              
+              // register cell
+              self.placesView.placesTableView.register(UINib(nibName: CellID.placesTableViewCell, bundle: nil), forCellReuseIdentifier: CellID.placesTableViewCell)
+              }
+        
         // start loading
         self.placesView.activityIndicatorView.startAnimating()
         

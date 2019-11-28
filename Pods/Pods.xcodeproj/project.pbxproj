@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -29,9 +29,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0E5BB25AD6CF700AF5F51C8352AB8D17 /* Pods-AirportLocatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B22C017D9299166BDB5149B8821A35F /* Pods-AirportLocatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3144A4BFB36600D188B4BC21C1C32625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4ACC16262E9FF0F9D380D6F2C6B3C0FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5A7ECA05F3D916A5B5D7F45F123C67A3 /* Pods-AirportLocator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 927B92E44B1DCBB19C7A22B0F180A084 /* Pods-AirportLocator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9863ABA5AFF0FEAF5CE1040E1E8CF13F /* Pods-AirportLocator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AF5AAD51F69537021D23D6DE708906 /* Pods-AirportLocator-dummy.m */; };
+		5A7ECA05F3D916A5B5D7F45F123C67A3 /* Pods-AirportLocator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A065EA31F3E390994605319A383F16 /* Pods-AirportLocator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9863ABA5AFF0FEAF5CE1040E1E8CF13F /* Pods-AirportLocator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DC389FA6966C1C85BDBD0CD7DE640C /* Pods-AirportLocator-dummy.m */; };
+		B14639D4DC198D78C0D8D526D2C009AB /* Pods-AirportLocatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F37E3FE102CEFD9C067943BBDF3868B4 /* Pods-AirportLocatorTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,26 +59,42 @@
 			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
 			remoteInfo = GoogleMaps;
 		};
+		F1F8BC2A13291BAE0B63AA9A9F2D5F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E4A059CC35FF41600AEF2C351FBEF3;
+			remoteInfo = "Pods-AirportLocator";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E852844C8550B3CCEE58E9B120C83F1 /* Pods-AirportLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirportLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		15EB5E68740FD449E0FCFC1D30CA21FB /* Pods-AirportLocator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirportLocator.modulemap"; sourceTree = "<group>"; };
+		27AAE0FD443900DB9D33F137353D7EEC /* Pods-AirportLocator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AirportLocator-resources.sh"; sourceTree = "<group>"; };
+		28DC389FA6966C1C85BDBD0CD7DE640C /* Pods-AirportLocator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirportLocator-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		45E95A91323A72EF5480F2D89EAD0758 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		592169A4B0C201A24156C4CE4BA9D08F /* Pods-AirportLocator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirportLocator-Info.plist"; sourceTree = "<group>"; };
-		6B2E713A7937CF522E97B341ADC21BA4 /* Pods-AirportLocator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirportLocator.modulemap"; sourceTree = "<group>"; };
-		6E9847D46B65A47652D2BA5C0B28164A /* Pods-AirportLocator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirportLocator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		516E174BF00A54A14276700DDC57C4A5 /* Pods-AirportLocator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirportLocator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		533B5CD2968C21824A686AB6838A0DA9 /* Pods-AirportLocatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirportLocatorTests.modulemap"; sourceTree = "<group>"; };
+		5F647B38DDD753903EA2B3BA547951D4 /* Pods-AirportLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirportLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		70BE1FA2467460DF62A56576DC36CC34 /* Pods-AirportLocatorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirportLocatorTests-Info.plist"; sourceTree = "<group>"; };
+		74FBE1E702FD958290C3D437B13ACD26 /* Pods-AirportLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirportLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77A065EA31F3E390994605319A383F16 /* Pods-AirportLocator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirportLocator-umbrella.h"; sourceTree = "<group>"; };
 		77CE3AA746A70574B986D1B98043929A /* Pods_AirportLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirportLocator.framework; path = "Pods-AirportLocator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F659D2DBDB332DCF6124D106FFDB2EF /* Pods-AirportLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirportLocator.release.xcconfig"; sourceTree = "<group>"; };
+		7B22C017D9299166BDB5149B8821A35F /* Pods-AirportLocatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirportLocatorTests-umbrella.h"; sourceTree = "<group>"; };
 		822A70C28AD74CE88892E4CBB40E67E0 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
 		82DF85662CBAC2FCD2109748A9F11154 /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
-		927B92E44B1DCBB19C7A22B0F180A084 /* Pods-AirportLocator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirportLocator-umbrella.h"; sourceTree = "<group>"; };
 		983E2276BB6876DCA5FFF8F1242831B8 /* GooglePlaces.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EF414C8F3A565E4625D98B86D4D36C1 /* Pods-AirportLocator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AirportLocator-resources.sh"; sourceTree = "<group>"; };
-		ACA8F90F094EFE4F100CE95594C12461 /* Pods-AirportLocator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirportLocator-acknowledgements.plist"; sourceTree = "<group>"; };
-		B0AF5AAD51F69537021D23D6DE708906 /* Pods-AirportLocator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirportLocator-dummy.m"; sourceTree = "<group>"; };
-		E953BC22CE17E2FDF490CEA4353A33AE /* Pods-AirportLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirportLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		A5103569241105C53E237A889BCD49AA /* Pods-AirportLocatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirportLocatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA44DB9571DDA32E5C8399FAB3601E1D /* Pods-AirportLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirportLocator.release.xcconfig"; sourceTree = "<group>"; };
+		D40C07D5B6813BF1210FF17498126927 /* Pods-AirportLocator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirportLocator-Info.plist"; sourceTree = "<group>"; };
 		ECB28BB1F91B60F417A10FAA6A210C96 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		EE9A84D5367C2263A00DE61993FD38A4 /* Pods-AirportLocator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirportLocator-acknowledgements.plist"; sourceTree = "<group>"; };
+		F37E3FE102CEFD9C067943BBDF3868B4 /* Pods-AirportLocatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirportLocatorTests-dummy.m"; sourceTree = "<group>"; };
+		F7D380B477C8087CF313EBE1789D71AF /* Pods-AirportLocatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirportLocatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9A2FF64F865CA2C3AB431CDACBDE01A /* Pods_AirportLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirportLocatorTests.framework; path = "Pods-AirportLocatorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +106,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E853BC0A0509C4B5A16765B4A8660644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3144A4BFB36600D188B4BC21C1C32625 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FE28B34DB56E4457D4FCDB946E02CA7 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				95DB5101C33056D5B1E9431D304DD6EC /* Pods-AirportLocator */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		13F49D63DF09A8DE6659AF622FCE8E24 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +159,23 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		593785A7EEF34A9571BD3FF87062E1EC /* Pods-AirportLocator */ = {
+			isa = PBXGroup;
+			children = (
+				15EB5E68740FD449E0FCFC1D30CA21FB /* Pods-AirportLocator.modulemap */,
+				516E174BF00A54A14276700DDC57C4A5 /* Pods-AirportLocator-acknowledgements.markdown */,
+				EE9A84D5367C2263A00DE61993FD38A4 /* Pods-AirportLocator-acknowledgements.plist */,
+				28DC389FA6966C1C85BDBD0CD7DE640C /* Pods-AirportLocator-dummy.m */,
+				D40C07D5B6813BF1210FF17498126927 /* Pods-AirportLocator-Info.plist */,
+				27AAE0FD443900DB9D33F137353D7EEC /* Pods-AirportLocator-resources.sh */,
+				77A065EA31F3E390994605319A383F16 /* Pods-AirportLocator-umbrella.h */,
+				0E852844C8550B3CCEE58E9B120C83F1 /* Pods-AirportLocator.debug.xcconfig */,
+				BA44DB9571DDA32E5C8399FAB3601E1D /* Pods-AirportLocator.release.xcconfig */,
+			);
+			name = "Pods-AirportLocator";
+			path = "Target Support Files/Pods-AirportLocator";
+			sourceTree = "<group>";
+		};
 		5FA337139C87CD7E328EA1948EB1AE45 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,21 +185,13 @@
 			path = "../Target Support Files/GoogleMaps";
 			sourceTree = "<group>";
 		};
-		95DB5101C33056D5B1E9431D304DD6EC /* Pods-AirportLocator */ = {
+		9669595147AB4EBBB77427884F8BC0FB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6B2E713A7937CF522E97B341ADC21BA4 /* Pods-AirportLocator.modulemap */,
-				6E9847D46B65A47652D2BA5C0B28164A /* Pods-AirportLocator-acknowledgements.markdown */,
-				ACA8F90F094EFE4F100CE95594C12461 /* Pods-AirportLocator-acknowledgements.plist */,
-				B0AF5AAD51F69537021D23D6DE708906 /* Pods-AirportLocator-dummy.m */,
-				592169A4B0C201A24156C4CE4BA9D08F /* Pods-AirportLocator-Info.plist */,
-				9EF414C8F3A565E4625D98B86D4D36C1 /* Pods-AirportLocator-resources.sh */,
-				927B92E44B1DCBB19C7A22B0F180A084 /* Pods-AirportLocator-umbrella.h */,
-				E953BC22CE17E2FDF490CEA4353A33AE /* Pods-AirportLocator.debug.xcconfig */,
-				7F659D2DBDB332DCF6124D106FFDB2EF /* Pods-AirportLocator.release.xcconfig */,
+				593785A7EEF34A9571BD3FF87062E1EC /* Pods-AirportLocator */,
+				B91F0193957B7002859E7659E98CCE02 /* Pods-AirportLocatorTests */,
 			);
-			name = "Pods-AirportLocator";
-			path = "Target Support Files/Pods-AirportLocator";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		9E1A137457F78F5ECD5F01FAB896B4D3 /* GoogleMaps */ = {
@@ -176,12 +204,37 @@
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
+		B91F0193957B7002859E7659E98CCE02 /* Pods-AirportLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				533B5CD2968C21824A686AB6838A0DA9 /* Pods-AirportLocatorTests.modulemap */,
+				F7D380B477C8087CF313EBE1789D71AF /* Pods-AirportLocatorTests-acknowledgements.markdown */,
+				A5103569241105C53E237A889BCD49AA /* Pods-AirportLocatorTests-acknowledgements.plist */,
+				F37E3FE102CEFD9C067943BBDF3868B4 /* Pods-AirportLocatorTests-dummy.m */,
+				70BE1FA2467460DF62A56576DC36CC34 /* Pods-AirportLocatorTests-Info.plist */,
+				7B22C017D9299166BDB5149B8821A35F /* Pods-AirportLocatorTests-umbrella.h */,
+				74FBE1E702FD958290C3D437B13ACD26 /* Pods-AirportLocatorTests.debug.xcconfig */,
+				5F647B38DDD753903EA2B3BA547951D4 /* Pods-AirportLocatorTests.release.xcconfig */,
+			);
+			name = "Pods-AirportLocatorTests";
+			path = "Target Support Files/Pods-AirportLocatorTests";
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C3813D77A891CE3C91A6C4DE36F5AF7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77CE3AA746A70574B986D1B98043929A /* Pods_AirportLocator.framework */,
+				F9A2FF64F865CA2C3AB431CDACBDE01A /* Pods_AirportLocatorTests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C806B12876474900503A491F01C7DF04 /* Base */ = {
@@ -198,8 +251,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				229CB5AF55F55DBD016D6043ECFD180A /* Pods */,
-				FE08760DEC2305F5532D7EA3D2F2B1CE /* Products */,
-				0FE28B34DB56E4457D4FCDB946E02CA7 /* Targets Support Files */,
+				C3813D77A891CE3C91A6C4DE36F5AF7C /* Products */,
+				9669595147AB4EBBB77427884F8BC0FB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,17 +275,17 @@
 			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
-		FE08760DEC2305F5532D7EA3D2F2B1CE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				77CE3AA746A70574B986D1B98043929A /* Pods_AirportLocator.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		01C7479B8F97AA7AAEEE2C3EF80B9B34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5BB25AD6CF700AF5F51C8352AB8D17 /* Pods-AirportLocatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7DFDC097D25F7D26A71FACAB3920D13 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +317,25 @@
 			productReference = 77CE3AA746A70574B986D1B98043929A /* Pods_AirportLocator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7CA8DC9BB36A32E412611A3D2ADFCC50 /* Pods-AirportLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA497F0318F0353C38C723B4D25FA90 /* Build configuration list for PBXNativeTarget "Pods-AirportLocatorTests" */;
+			buildPhases = (
+				01C7479B8F97AA7AAEEE2C3EF80B9B34 /* Headers */,
+				CCF066BDD7457AD9803922F5D1786900 /* Sources */,
+				E853BC0A0509C4B5A16765B4A8660644 /* Frameworks */,
+				AFF8C33522A968E2CB89A0400EE00BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA03FACCC4BE8389C5C930B9DD5613F /* PBXTargetDependency */,
+			);
+			name = "Pods-AirportLocatorTests";
+			productName = "Pods-AirportLocatorTests";
+			productReference = F9A2FF64F865CA2C3AB431CDACBDE01A /* Pods_AirportLocatorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -274,7 +346,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -282,18 +354,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = FE08760DEC2305F5532D7EA3D2F2B1CE /* Products */;
+			productRefGroup = C3813D77A891CE3C91A6C4DE36F5AF7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
 				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
 				07E4A059CC35FF41600AEF2C351FBEF3 /* Pods-AirportLocator */,
+				7CA8DC9BB36A32E412611A3D2ADFCC50 /* Pods-AirportLocatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AFF8C33522A968E2CB89A0400EE00BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3C5A779BFE92F8234476AF6B0A43590 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +392,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCF066BDD7457AD9803922F5D1786900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14639D4DC198D78C0D8D526D2C009AB /* Pods-AirportLocatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -326,6 +414,12 @@
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
 			targetProxy = 70CE9B58F2920E266EBDE169885A1E4B /* PBXContainerItemProxy */;
+		};
+		ACA03FACCC4BE8389C5C930B9DD5613F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AirportLocator";
+			target = 07E4A059CC35FF41600AEF2C351FBEF3 /* Pods-AirportLocator */;
+			targetProxy = F1F8BC2A13291BAE0B63AA9A9F2D5F06 /* PBXContainerItemProxy */;
 		};
 		D42315111F400C0605ACCD6B5CAF2178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -354,7 +448,7 @@
 		};
 		640727CE24B2910129A70E481D4C9E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E953BC22CE17E2FDF490CEA4353A33AE /* Pods-AirportLocator.debug.xcconfig */;
+			baseConfigurationReference = 0E852844C8550B3CCEE58E9B120C83F1 /* Pods-AirportLocator.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -392,7 +486,7 @@
 		};
 		709A8DE3D8AB034D1BAE757A1A6725A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F659D2DBDB332DCF6124D106FFDB2EF /* Pods-AirportLocator.release.xcconfig */;
+			baseConfigurationReference = BA44DB9571DDA32E5C8399FAB3601E1D /* Pods-AirportLocator.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -509,6 +603,45 @@
 			};
 			name = Debug;
 		};
+		A357010B7201B5FBC667910EC8B6E79D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F647B38DDD753903EA2B3BA547951D4 /* Pods-AirportLocatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82DF85662CBAC2FCD2109748A9F11154 /* GoogleMaps.xcconfig */;
@@ -525,6 +658,44 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		DA7B086D4718C96CB4BCCFB3127999E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74FBE1E702FD958290C3D437B13ACD26 /* Pods-AirportLocatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		DC85D7712D8EE6E340F053BC38E1FB63 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -606,6 +777,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1AA497F0318F0353C38C723B4D25FA90 /* Build configuration list for PBXNativeTarget "Pods-AirportLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7B086D4718C96CB4BCCFB3127999E1 /* Debug */,
+				A357010B7201B5FBC667910EC8B6E79D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2FC2AC47FDB0310285CE777F18CD1532 /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

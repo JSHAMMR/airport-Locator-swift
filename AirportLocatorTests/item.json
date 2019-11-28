@@ -1,0 +1,57 @@
+
+{
+   "html_attributions": [],
+   "next_page_token": "CoQC9gAAAK1AFFbPb8svcsjyJDSxzRkI6svC4GtnX1rbHRGcOh2YhnPDIO8jxjkjnVPK1c2J0mxdvG57ArSYnuIUPnEekK3iJNzcFJsFrcd0zFKC1FmEQOf_ncsqC8FE2VjGv07tgHZhIxu7w9MUmKA7z3p454Vu6albg0SgaOQxrMSwHO1q8xoxZg5Eezu0rmzZLhgmywKePL1vapeotis36NLMbs25t13t05ir2kCmZwFLuyQvm27eV6gO2vk8xv1jAP0y-Shv7l4XhDyhY9aXcckh3iU4YS3NhPoNX60oSh3d-Q6RtSgn2aFKB8W5YggZqFr4770ZInFwhioZFcKiHGn1XOkSEJ4VV98uBcEcnau5_wbADEcaFHuxymNt7fIb8x7EFAY3nFcp1n4P",
+   "results": [
+      {
+         "formatted_address": "64000 Sepang, Selangor, Malaysia",
+         "geometry": {
+            "location": {
+               "lat": 2.7455962,
+               "lng": 101.7071602
+            },
+            "viewport": {
+               "northeast": {
+                  "lat": 2.768311899999998,
+                  "lng": 101.7166993
+               },
+               "southwest": {
+                  "lat": 2.7380243,
+                  "lng": 101.6785429
+               }
+            }
+         },
+         "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/airport-71.png",
+         "id": "170dd6b481e63891981754cc8b509ddf9adebe8a",
+         "name": "Kuala Lumpur International Airport",
+         "opening_hours": {
+            "open_now": true
+         },
+         "photos": [
+            {
+               "height": 2976,
+               "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/116733645211297277988/photos\">kohei takatori</a>"
+               ],
+               "photo_reference": "CmRaAAAAA7JchLo6s9WPbVVZHJajGtNJIzo-y8bliGBPv88eYCyjwxMLHaVTsD75Mn2x4R2Wj2NikUhGKNtHbji852snvTCMZlnkvmJsRj3ZBwGjBKPOlG367YrJAfaDsGP9JzjJEhAu-kFaPUppcFupzNZ0R0QJGhQ-KU31phU3udyU11q89lC8DBSUIQ",
+               "width": 3968
+            }
+         ],
+         "place_id": "ChIJERKi1IC_zTERC_q1Z7t4J5g",
+         "plus_code": {
+            "compound_code": "PPW4+6V Sepang, Selangor",
+            "global_code": "6PJ3PPW4+6V"
+         },
+         "rating": 4.1,
+         "reference": "ChIJERKi1IC_zTERC_q1Z7t4J5g",
+         "types": [
+            "airport",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total": 9477
+      }
+      
+   ],
+   "status": "OK"
+}

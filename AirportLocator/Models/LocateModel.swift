@@ -123,6 +123,11 @@ class Result: Codable {
         self.types = types
         self.userRatingsTotal = userRatingsTotal
     }
+    
+    init(formattedAddress: String?) {
+        self.formattedAddress = formattedAddress
+        
+    }
 }
 
 // MARK: Result convenience initializers and mutators
