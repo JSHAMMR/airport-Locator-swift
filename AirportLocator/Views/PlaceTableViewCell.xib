@@ -8,14 +8,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaceTableViewCell" rowHeight="100" id="pm7-Vk-vWU" customClass="PlaceTableViewCell" customModule="Airport_Locator" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaceTableViewCell" rowHeight="100" id="pm7-Vk-vWU" customClass="PlaceTableViewCell" customModule="AirportLocatorTests" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pm7-Vk-vWU" id="xxL-1f-AQB">
                 <rect key="frame" x="0.0" y="0.0" width="383" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KLIA" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRT-BN-BiL" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KLIA" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRT-BN-BiL" customClass="EdgeInsetLabel" customModule="AirportLocatorTests" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="ddh-0i-GZJ"/>
@@ -29,8 +29,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lat 23232323" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfu-oc-DwZ" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="48" width="102.5" height="25"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lat 23232323" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfu-oc-DwZ" customClass="EdgeInsetLabel" customModule="AirportLocatorTests" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="48" width="87.5" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="GS9-4B-3bK"/>
                         </constraints>
@@ -43,8 +43,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="long 121313123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFI-v1-oce" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="75" width="123.5" height="25"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="long 121313123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFI-v1-oce" customClass="EdgeInsetLabel" customModule="AirportLocatorTests" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="75" width="108.5" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="sLn-eW-LMN"/>
                         </constraints>
@@ -57,7 +57,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KLIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZN-Qs-7T4" customClass="EdgeInsetLabel" customModule="Airport_Locator" customModuleProvider="target">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KLIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZN-Qs-7T4" customClass="EdgeInsetLabel" customModule="AirportLocatorTests" customModuleProvider="target">
                         <rect key="frame" x="267" y="48" width="116" height="52"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="116" id="jDf-SR-qxT"/>
@@ -87,10 +87,10 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="distanceLbl" destination="qZN-Qs-7T4" id="xJG-R8-rd3"/>
                 <outlet property="latLbl" destination="gfu-oc-DwZ" id="2gm-XT-TH8"/>
                 <outlet property="longLbl" destination="LFI-v1-oce" id="JzE-jw-qNy"/>
                 <outlet property="nameLbl" destination="TRT-BN-BiL" id="Ij4-aZ-CHY"/>
-                <outlet property="rateLbl" destination="qZN-Qs-7T4" id="xJG-R8-rd3"/>
             </connections>
             <point key="canvasLocation" x="124.6376811594203" y="257.8125"/>
         </tableViewCell>

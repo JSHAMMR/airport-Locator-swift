@@ -12,7 +12,6 @@ import GooglePlaces
 
 
 
-
 protocol FetchPlacesDelegate {
     // create delegation func to be used on controller
     func didFetchPlaces(locateModel:LocateModel)
@@ -54,39 +53,47 @@ class LocateViewModel {
                            
        }
     
+    
+    
+    
+    func getGooglePlaces(completion: @escaping (LocateModel) -> Void) {
+        
+        var strGoogleApi = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(KEYWORD)&key=\(KEY)"
+           strGoogleApi = strGoogleApi.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+
+           var urlRequest = URLRequest(url: URL(string: strGoogleApi)!)
+           urlRequest.httpMethod = "GET"
+           let task = URLSession.shared.dataTask(with: urlRequest) { (data, resopnse, error) in
+               if error == nil {
+                 do {
+                     
+                     // decode response data to LocateModel
+                     let locateModel  = try! LocateModel(data: data!)
+
+                     // set locateModel to clousre
+                    completion(locateModel)
+
+                 } catch let error {
+                     print(error)
+                 }
+               } else {
+                   //we have error connection google api
+               }
+           }
+           task.resume()
+        
+        
+    }
 
     
     // function to excute a query of nearby airports
     func fetchPlaces () {
-        var strGoogleApi = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(KEYWORD)&key=\(KEY)"
-                  strGoogleApi = strGoogleApi.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-          
-          var urlRequest = URLRequest(url: URL(string: strGoogleApi)!)
-          urlRequest.httpMethod = "GET"
-          let task = URLSession.shared.dataTask(with: urlRequest) { (data, resopnse, error) in
-              if error == nil {
-               
-                
-                
-                do {
-                    
-                    // decode response data to LocateModel
-                    let locateModel  = try! LocateModel(data: data!)
+        
+        // call google api function and set delegate value
+        self.getGooglePlaces { (locateModel) in
+            self.fetchPlacesDelegate?.didFetchPlaces(locateModel: locateModel)
 
-                    // call delegated func
-                    self.fetchPlacesDelegate?.didFetchPlaces(locateModel: locateModel)
-
-                } catch let error {
-                    print(error)
-                }
-               
-                
-                
-              } else {
-                  //we have error connection google api
-              }
-          }
-          task.resume()
+        }
      }
     
 

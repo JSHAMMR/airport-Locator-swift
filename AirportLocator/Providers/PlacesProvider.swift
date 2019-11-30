@@ -57,10 +57,9 @@ class PlacesProvider: NSObject,UITableViewDelegate, UITableViewDataSource {
         let cllocation = CLLocation(latitude:  result!.geometry?.location?.lat ?? 0.0, longitude: result!.geometry?.location?.lng ?? 0.0)
 
         // show data on cell labels
-        cell.nameLbl.text  = result?.name ?? ""
-        cell.latLbl.text    = "Lat : \(result?.geometry?.location?.lat ?? 0.0)"
-        cell.longLbl.text   = "Long : \(result?.geometry?.location?.lng ?? 0.0)"
-        cell.rateLbl.text   = "\(String(format: "%.2f",getDistance(location1:userLocation,location2: cllocation)/1000)) KM"
+        
+        cell.result  = result
+        cell.distanceLbl.text   = "\(String(format: "%.2f",getDistance(location1:userLocation,location2: cllocation)/1000)) KM"
 
         return cell
     }
@@ -127,10 +126,6 @@ class PlacesProvider: NSObject,UITableViewDelegate, UITableViewDataSource {
             
             
             return true
-        
-        
-
-        
     }
 
 }
