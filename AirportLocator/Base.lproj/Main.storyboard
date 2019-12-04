@@ -10,12 +10,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Airport_Locator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="AirportLocatorTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BSJ-6c-IqH">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="map" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BSJ-6c-IqH">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
@@ -30,7 +30,7 @@
                                     <action selector="showPlaces:" destination="BYZ-38-t0r" id="9OB-uz-Ysk"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="location.circle.fill" catalog="system" id="epp-JA-BL3">
+                            <barButtonItem title="nav" image="location.circle.fill" catalog="system" id="epp-JA-BL3">
                                 <connections>
                                     <action selector="locate:" destination="BYZ-38-t0r" id="ZeP-JP-Zzm"/>
                                 </connections>
@@ -45,9 +45,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="H3B-T4-RSk" customClass="PlacesProvider" customModule="Airport_Locator" customModuleProvider="target"/>
-                <customObject id="R9K-rU-AtT" customClass="LocationManagerProvider" customModule="Airport_Locator" customModuleProvider="target"/>
-                <customObject id="OrJ-Y6-dI0" customClass="MapProvider" customModule="Airport_Locator" customModuleProvider="target"/>
+                <customObject id="H3B-T4-RSk" customClass="PlacesProvider" customModule="AirportLocatorTests" customModuleProvider="target"/>
+                <customObject id="R9K-rU-AtT" customClass="LocationManagerProvider" customModule="AirportLocatorTests" customModuleProvider="target"/>
+                <customObject id="OrJ-Y6-dI0" customClass="MapProvider" customModule="AirportLocatorTests" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="128.57142857142856"/>
         </scene>
