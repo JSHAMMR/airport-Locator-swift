@@ -43,5 +43,7 @@ alt="IMAGE ALT TEXT HERE" width="200" height="400" border="10" />
 </ul>
 <h2>Repository Branches</h2>
 <ul>
- <li>Master</li>
+ <li>master</li>
+ <li>setup-ci</li>
+
 </ul>
