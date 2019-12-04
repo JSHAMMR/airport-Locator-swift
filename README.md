@@ -3,6 +3,7 @@
 <h5>This app has been implemented using MVVM-C Architecture and data providers.   <h5>
 
 <h6> This app designed to navigate location for nearest Airports with distance in KM. </h6>
+[![Build Status](https://travis-ci.com/JSHAMMR/airport-Locator-swift.svg?branch=master)](https://travis-ci.com/JSHAMMR/airport-Locator-swift)
 </br>
 
   <img src="https://github.com/JSHAMMR/airport-Locator-swift/blob/master/Docs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202019-11-28%20at%2008.24.47.png" 
