@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		551BD4CFDCDA4229F6BA3DD8 /* Pods_AirportLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199EFDDA709C16A2616C22EA /* Pods_AirportLocatorTests.framework */; };
-		64B79366C8EF1251BFCAB190 /* Pods_AirportLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */; };
 		DC18336F238D498D00E63B00 /* MapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18336E238D498D00E63B00 /* MapProvider.swift */; };
 		DC18337D238D6A0700E63B00 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18337C238D6A0700E63B00 /* LocationManagerTests.swift */; };
 		DC183386238D6EBC00E63B00 /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC183384238D6B2900E63B00 /* mockData.json */; };
@@ -65,11 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		199EFDDA709C16A2616C22EA /* Pods_AirportLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportLocatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F902D5DDC032ADEF37A9AA /* Pods-AirportLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocator.release.xcconfig"; path = "Target Support Files/Pods-AirportLocator/Pods-AirportLocator.release.xcconfig"; sourceTree = "<group>"; };
 		7ED29312E812A655C118FB05 /* Pods-AirportLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocatorTests.debug.xcconfig"; path = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80FBD3DA0BE3D3BD4E23BDEF /* Pods-AirportLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportLocatorTests.release.xcconfig"; path = "Target Support Files/Pods-AirportLocatorTests/Pods-AirportLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC18336E238D498D00E63B00 /* MapProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProvider.swift; sourceTree = "<group>"; };
 		DC18337A238D6A0700E63B00 /* AirportLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirportLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC18337C238D6A0700E63B00 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
@@ -107,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551BD4CFDCDA4229F6BA3DD8 /* Pods_AirportLocatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B79366C8EF1251BFCAB190 /* Pods_AirportLocator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +137,6 @@
 		C5E670CD1CFC09A3A05AFA57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A61729CA28834CDA4E86147E /* Pods_AirportLocator.framework */,
-				199EFDDA709C16A2616C22EA /* Pods_AirportLocatorTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
