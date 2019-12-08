@@ -25,3 +25,12 @@ end
 lane :tests do
   run_tests(scheme: "CI")
 end
+
+lane :beta do
+
+  get_certificates          
+  get_provisioning_profile   
+          scheme: "CI",
+
+  build_app
+end
