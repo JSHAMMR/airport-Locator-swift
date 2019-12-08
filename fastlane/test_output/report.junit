@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='AirportLocatorUITests.xctest' tests='12' failures='0'>
+  <testsuite name='AirportLocatorTests.LocationManagerTests' tests='2' failures='0'>
+    <testcase classname='AirportLocatorTests.LocationManagerTests' name='testLocationManager' time='0.002'/>
+    <testcase classname='AirportLocatorTests.LocationManagerTests' name='testLocationManagerServicesEnabled' time='0.001'/>
+  </testsuite>
+  <testsuite name='AirportLocatorTests.MapTest' tests='4' failures='0'>
+    <testcase classname='AirportLocatorTests.MapTest' name='testControllerAddsAnnotationsToMapView' time='0.032'/>
+    <testcase classname='AirportLocatorTests.MapTest' name='testControllerCanAddAnnotationToMapView' time='0.020'/>
+    <testcase classname='AirportLocatorTests.MapTest' name='testMapViewDelegateIsSet' time='0.030'/>
+    <testcase classname='AirportLocatorTests.MapTest' name='testViewControllerIsComposedOfMapView' time='0.017'/>
+  </testsuite>
+  <testsuite name='AirportLocatorTests.ModelMapingTest' tests='1' failures='0'>
+    <testcase classname='AirportLocatorTests.ModelMapingTest' name='testMapping' time='0.003'/>
+  </testsuite>
+  <testsuite name='AirportLocatorTests.PlacesDelegateDataSourceTest' tests='4' failures='0'>
+    <testcase classname='AirportLocatorTests.PlacesDelegateDataSourceTest' name='testDistance' time='0.006'/>
+    <testcase classname='AirportLocatorTests.PlacesDelegateDataSourceTest' name='testRowCount' time='0.003'/>
+    <testcase classname='AirportLocatorTests.PlacesDelegateDataSourceTest' name='testSectionCount' time='0.003'/>
+    <testcase classname='AirportLocatorTests.PlacesDelegateDataSourceTest' name='testUserSelection' time='0.004'/>
+  </testsuite>
+  <testsuite name='AirportLocatorUITests.AirportLocatorUITests' tests='1' failures='0'>
+    <testcase classname='AirportLocatorUITests.AirportLocatorUITests' name='testMapView' time='0.032'/>
+  </testsuite>
+</testsuites>

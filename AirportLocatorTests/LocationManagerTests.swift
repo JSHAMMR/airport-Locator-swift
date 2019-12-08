@@ -34,10 +34,10 @@ class LocationManagerTests: XCTestCase {
       }
     
 
-    func testLocationManagerAuthorizationStatusAlways() {
-
-        XCTAssertEqual(CLLocationManager.authorizationStatus(), .authorizedAlways)
-    }
+//    func testLocationManagerAuthorizationStatusAlways() {
+//
+//        XCTAssertEqual(CLLocationManager.authorizationStatus(), .authorizedAlways)
+//    }
     
 //    func testLocationManagerAuthorizationStatusWhenInUse() { // in case of authorization when in use
 //
